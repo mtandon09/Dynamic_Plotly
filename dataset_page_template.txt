@@ -1,0 +1,43 @@
+helloiamavariablename
+=====================================  
+
+Column {data-width=200, data-height=1000}
+-------------------------------------
+### Define some data
+```{r}
+library(datasets)
+
+DATASETNAME="helloiamavariablename"
+alldata <- eval(parse(text=DATASETNAME))
+
+dataset_details <- data()$results
+my_details <- dataset_details[dataset_details[,"Item"]==DATASETNAME,c("Item","Title")]
+names(my_details) <- c("Dataset","Description")
+my_details["Rows"]<- prettyNum(nrow(alldata),big.mark = ",")
+my_details["Columns"] <- prettyNum(ncol(alldata),big.mark = ",")
+my_details["Total_DataPoints"] <- prettyNum(nrow(alldata)*ncol(alldata),big.mark = ",")
+
+for (i in 1:length(my_details)) {
+  writeLines(c(paste0(names(my_details)[i],":"),paste0("\t",my_details[i])))
+}
+
+writeLines("Citation:")
+citation("datasets")
+
+```
+
+<!-- Column {.tabset, data-width=800} -->
+Column {.tabset}
+-------------------------------------
+### 2-D plot
+```{r}
+## Custom function, check Rmd for code
+make_customizable_plotly(alldata, sort_by_cor=T)
+```
+
+### 3-D plot
+```{r}
+## Custom function, check Rmd for code
+make_customizable_plotly(alldata, sort_by_cor=T, plot3D=T, plotwidth = 1000, plotheight=800)
+```
+

@@ -16,6 +16,7 @@ make_customizable_plotly(my_dataframe,
                          plotwidth=800, plotheight=600) {
 ```
 ### Arguments
+
 Name | Value
 -------- | -----
 `my_dataframe` | `data.frame` containing data to plot

@@ -1,4 +1,10 @@
-## Making arbitrary plots from an R `data.frame` with [`plot_ly`](https://plotly.com/r/)
+# Making arbitrary plots from an R `data.frame` with [`plot_ly`](https://plotly.com/r/)
+## Live example
+I plugged in a few datasets from the built-in R [`datasets`](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html) library
+
+[Click here](small_dataset.html) to test it out!
+
+[Click here](large_dataset.html) to test it with the `baseball` dataset (~ 500k data points)
 
 ## Motivation
 R is great (lol) and all, but sometimes you just wanna look at the data.  `plot_ly` allows you to make super useful interactive plots from R, but you kinda need to know *what* you want to plot already, which is not great for exploration.

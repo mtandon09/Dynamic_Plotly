@@ -38,4 +38,5 @@ Name | Value
 A `plotly` object, which is a subset of [`htmlwidget`](https://www.htmlwidgets.org/)
 
 
-
+# Caveats
+I DON'T THINK THIS IS WORKING YET

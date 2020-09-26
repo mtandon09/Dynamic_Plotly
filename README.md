@@ -1,3 +1,4 @@
+#### View on [github.io](https://mtandon09.github.io/Dynamic_Plotly/)
 # Making arbitrary plots from an R `data.frame` with [`plot_ly`](https://plotly.com/r/)
 ## Live example
 I plugged in a few datasets from the built-in R [`datasets`](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html) library

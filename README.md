@@ -40,4 +40,10 @@ A `plotly` object, which is a subset of [`htmlwidget`](https://www.htmlwidgets.o
 
 
 # Caveats
-I DON'T THINK THIS IS WORKING YET
+- It doesn't work for categorical variables
+  - `plot_ly` doesn't seem to like mixing categorical and continuous variables
+  - So color does not work for categorical variables, but setting x/y variables should work for everything
+- JS is weird and randomly fails sometimes without any errors, so I don't know how well this is working yet
+
+
+

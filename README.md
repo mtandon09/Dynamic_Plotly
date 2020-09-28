@@ -40,7 +40,9 @@ A `plotly` object, which is a subset of [`htmlwidget`](https://www.htmlwidgets.o
 
 ## How to use
 The easiest way to test out this function is to source it directly from Github using R:
-`source("https://raw.githubusercontent.com/mtandon09/Dynamic_Plotly/master/make_cutomizable_plotly.R")`
+```
+source("https://raw.githubusercontent.com/mtandon09/Dynamic_Plotly/master/make_cutomizable_plotly.R")
+```
 
 This will make the function `make_customizable_plotly` available in your current namespace, and you can use it as shown above. You can save the widget as html with [`htmlwidgets::saveWidget()`](https://rdrr.io/cran/htmlwidgets/man/saveWidget.html)
 
